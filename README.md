@@ -17,7 +17,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Team Members
 
-- Person 1: one sentence about you!
+- Person 1: Micky Yin (#48376140), I am majoring in Computer Science with strong interest in back-end development. I am interested to learn game development and some machine learning nice to meet you all! 
 - Person 2: one sentence about you!
 - Person 3: one sentence about you!
 
