@@ -1,5 +1,5 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=312412&assignment_repo_type=GroupAssignmentRepo)
-# Group 6015 - {Short snappy Title of your project}
+# Group 6015 - {Analysis on the Twitter posts about Coronavirus}
 
 - Your title can change over time.
 
@@ -9,11 +9,11 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-{Add your stuff here}
+Our interest is to assess what kind of posts are on Twitter with hashtags of Coronavirus or have descriptions about Coronavirus. Ever since the outbreak of Coronavirus, many people have encountered different impacts among their lives, and some/few people might have expressed their concerns or thoughts through twitter. So our job is to find out what are the common challenges that people have posted during the coronavirus period, for example, speaking from my perspective is: the shortage of food during the pandemic or lack of exercise due to the closure of gyms etc. Some other people might have faced unemployment. We want to analyze what are some of the most common used words/sentences among all twitter posts related to coronavirus? Similarly, which locations have the highest amount of twitter post within a given period or up to date. 
 
 ## Describe your dataset in about 150-200 words
 
-{Add your stuff here}
+Our dataset has 6 columns and more than 5000 rows of tuples. We are intested in analyzing the following variables: Location of the twitter posted at, Tweeted at which date, The original Tweet description, The label of the tweet done by sentiment analysis. The data is accumulated from march 3rd, 2020 to April 14th, 2020. The locations the twitter post are determined by their province & country.  
 
 ## Team Members
 
