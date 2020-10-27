@@ -18,7 +18,7 @@ Our dataset has 6 columns and more than 5000 rows of tuples. We are intested in 
 ## Team Members
 
 - Person 1: Micky Yin (#48376140), I am majoring in Computer Science with strong interest in back-end development. I am interested to learn game development and some machine learning nice to meet you all! 
-- Person 2: one sentence about you!
+- Person 2: Brandon Krieg 56913452. Computer Science major with strong emphasis on scientific, mathematical computing
 - Person 3: one sentence about you!
 
 ## References
