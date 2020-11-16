@@ -20,74 +20,41 @@ def display_big_picture(df):
     #displays the general form of all the data
     print(df.describe())
     
-    plt.figure(figsize = (30, 25))
+    plt.figure(figsize = (25, 20))
     
     plt.subplot(7, 7, 1)
     plt.hist(df.age, edgecolor = "black")
-    plt.xlabel("Age")
-    plt.ylabel("Count")
+    plt.xlabel("age")
     
     plt.subplot(7, 7, 2)
     plt.hist(df.sex, edgecolor = "black")
-    plt.xlabel("Sex")
-    plt.ylabel("Count")
+    plt.xlabel("sex")
     
     plt.subplot(7, 7, 3)
     plt.hist(df.bmi, edgecolor = "black")
-    plt.xlabel("BMI")
-    plt.ylabel("Count")
+    plt.xlabel("bmi")
     
     plt.subplot(7, 7, 4)
     plt.hist(df.children, edgecolor = "black")
-    plt.xlabel("Children")
-    plt.ylabel("Count")
+    plt.xlabel("children")
     
     plt.subplot(7, 7, 5)
     plt.hist(df.smoker, edgecolor = "black")
-    plt.xlabel("Smoker")
-    plt.ylabel("Count")
+    plt.xlabel("smoker")
     
     plt.subplot(7, 7, 6)
     plt.hist(df.region, edgecolor = "black")
-    plt.xlabel("Region")
-    plt.ylabel("Count")
+    plt.xlabel("region")
     
     plt.subplot(7, 7, 7)
     plt.hist(df.charges, edgecolor = "black")
-    plt.xlabel("Charges")
-    plt.ylabel("Count")
+    plt.xlabel("charges")
+    
+    plt.show()
     
 def cost_is_smoker(df):
     
-    sns.barplot(x = "smoker", y = "charges", data = df)
-    plt.xlabel("isSmoker?")
-    plt.ylabel("Charges")
     
-def cost_by_age(df):
-    
-    plt.figure(figsize = (8, 6))
-    sns.scatterplot(x = "age", y = "charges", data = df)
-    plt.xlabel("Age")
-    plt.ylabel("Charges")
-    
-def cost_by_sex(df):
-    
-    plt.figure(figsize = (10, 5))
-    sns.barplot(x = "sex", y = "charges", data = df)
-    plt.xlabel("Sex")
-    plt.ylabel("Charges")
-    
-def smokers_by_sex(df):
-    
-    df1 = df[df['smoker'] == 'yes']
-    df1  = df1.groupby(['sex'])['smoker'].count()
-    print(df1.head())
-    
-    print('\n')
-    
-    df2 = df[df['smoker'] == 'no']
-    df2  = df2.groupby(['sex'])['smoker'].count()
-    print(df2.head())
     
 def remove_smokers_highlowBMI_highAge(df):
         
