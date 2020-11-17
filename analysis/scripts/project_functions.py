@@ -89,6 +89,41 @@ def smokers_by_sex(df):
     df2  = df2.groupby(['sex'])['smoker'].count()
     print(df2.head())
     
+def cost_by_bmi(df):
+    
+    plt.figure(figsize = (8, 6))
+    sns.scatterplot(x = "bmi", y = "charges", data = df)
+    plt.xlabel("BMI")
+    plt.ylabel("Charges")
+    
+def cost_by_bmi_and_sex(df):
+    
+    plt.figure(figsize = (8, 6))
+    sns.scatterplot(x = "bmi", y = "charges", hue = "sex", data = df)
+    plt.xlabel("BMI")
+    plt.ylabel("Charges")
+    
+def cost_by_children(df):
+    
+    sns.catplot(x = "children", y = "charges", data = df, kind = "violin")
+    plt.suptitle("Charges by Number of Children")
+    plt.xlabel("Number of Children")
+    plt.ylabel("Charges")
+    
+def cost_by_age_and_smoker(df):
+    
+    plt.figure(figsize = (8, 6))
+    sns.scatterplot(x = "age", y = "charges", hue = "smoker", data = df)
+    plt.xlabel("Age")
+    plt.ylabel("Charges")
+    
+def cost_by_bmi_and_smoker(df):
+    
+    plt.figure(figsize = (8, 6))
+    sns.scatterplot(x = "bmi", y = "charges", hue = "smoker", data = df)
+    plt.xlabel("BMI")
+    plt.ylabel("Charges")
+    
 def remove_smokers_highlowBMI_highAge(df):
         
     # this function is just to remove at-risk populations from a set of data to showcase method chaining. This may not have any application to the actual project.
