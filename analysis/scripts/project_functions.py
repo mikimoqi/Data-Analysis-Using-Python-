@@ -18,7 +18,6 @@ def load_clean_df(path):
 def display_big_picture(df):
     
     #displays the general form of all the data
-    print(df.describe())
     
     plt.figure(figsize = (30, 25))
     
@@ -54,80 +53,94 @@ def display_big_picture(df):
     
     plt.subplot(7, 7, 7)
     plt.hist(df.charges, edgecolor = "black")
-    plt.xlabel("Charges")
+    plt.xlabel("Charges ($)")
     plt.ylabel("Count")
     
 def cost_is_smoker(df):
     
-    sns.barplot(x = "smoker", y = "charges", data = df)
-    plt.xlabel("isSmoker?")
-    plt.ylabel("Charges")
+    plt.figure(figsize = (10, 8))
+    sns.boxplot(x = "smoker", y = "charges", data = df)
+    plt.xlabel("isSmoker?", fontsize = 15)
+    plt.ylabel("Charges ($)", fontsize = 15)
+    plt.title("Charges by Smoker Status", fontsize = 15)
     
 def cost_by_age(df):
     
-    plt.figure(figsize = (8, 6))
+    plt.figure(figsize = (10, 8))
     sns.scatterplot(x = "age", y = "charges", data = df)
-    plt.xlabel("Age")
-    plt.ylabel("Charges")
+    plt.xlabel("Age", fontsize = 15)
+    plt.ylabel("Charges ($)", fontsize = 15)
+    plt.title("Charges Across Age", fontsize = 15)
     
 def cost_by_sex(df):
     
-    plt.figure(figsize = (10, 5))
-    sns.barplot(x = "sex", y = "charges", data = df)
-    plt.xlabel("Sex")
-    plt.ylabel("Charges")
+    plt.figure(figsize = (10, 8))
+    sns.catplot(x = "sex", y = "charges", data = df, kind = "violin")
+    plt.xlabel("Sex", fontsize = 15)
+    plt.ylabel("Charges ($)", fontsize = 15)
+    plt.title("Charges by Sex", fontsize = 15)
     
 def smokers_by_sex(df):
     
     df1 = df[df['smoker'] == 'yes']
     df1  = df1.groupby(['sex'])['smoker'].count()
+    print("smoker = YES")
     print(df1.head())
     
     print('\n')
     
     df2 = df[df['smoker'] == 'no']
     df2  = df2.groupby(['sex'])['smoker'].count()
+    print("smoker = NO")
     print(df2.head())
+    
+def cost_bmi_by_sex(df):
+    
+    plt.figure(figsize = (10, 8))
+    sns.scatterplot(x = "bmi", y = "charges", data = df, hue = "sex")
+    plt.xlabel("BMI", fontsize = 15)
+    plt.ylabel("Charges ($)", fontsize = 15)
+    plt.title("Charges Across BMI by Sex", fontsize = 15)
     
 def cost_by_bmi(df):
     
-    plt.figure(figsize = (8, 6))
+    plt.figure(figsize = (10, 8))
     sns.scatterplot(x = "bmi", y = "charges", data = df)
-    plt.xlabel("BMI")
-    plt.ylabel("Charges")
-    
-def cost_by_bmi_and_sex(df):
-    
-    plt.figure(figsize = (8, 6))
-    sns.scatterplot(x = "bmi", y = "charges", hue = "sex", data = df)
-    plt.xlabel("BMI")
-    plt.ylabel("Charges")
+    plt.xlabel("BMI", fontsize = 15)
+    plt.ylabel("Charges ($)", fontsize = 15)
+    plt.title("Charges Across BMI", fontsize = 15)
     
 def cost_by_children(df):
-    
+    plt.figure(figsize = (10, 8))
     sns.catplot(x = "children", y = "charges", data = df, kind = "violin")
-    plt.suptitle("Charges by Number of Children")
-    plt.xlabel("Number of Children")
-    plt.ylabel("Charges")
+    plt.suptitle("Charges by Number of Children", fontsize = 15)
+    plt.xlabel("Number of Children", fontsize = 15)
+    plt.ylabel("Charges ($)", fontsize = 15)
     
 def cost_by_age_and_smoker(df):
     
-    plt.figure(figsize = (8, 6))
+    plt.figure(figsize = (10, 8))
     sns.scatterplot(x = "age", y = "charges", hue = "smoker", data = df)
-    plt.xlabel("Age")
-    plt.ylabel("Charges")
+    plt.xlabel("Age", fontsize = 15)
+    plt.ylabel("Charges ($)", fontsize = 15)
+    plt.title("Charges by Age and Smoker Status", fontsize = 15)
     
 def cost_by_bmi_and_smoker(df):
     
-    plt.figure(figsize = (8, 6))
+    plt.figure(figsize = (10, 8))
     sns.scatterplot(x = "bmi", y = "charges", hue = "smoker", data = df)
-    plt.xlabel("BMI")
-    plt.ylabel("Charges")
+    plt.xlabel("BMI", fontsize = 15)
+    plt.ylabel("Charges ($)", fontsize = 15)
+    plt.title("Charges Across BMI by Smoker Status", fontsize = 15)
     
-
+def cost_by_region(df):
     
-
-
+    plt.figure(figsize = (10, 8))
+    sns.catplot(x = 'region', y = 'charges', data = df, kind = 'violin')
+    plt.xlabel("Region", fontsize = 15)
+    plt.ylabel("Charges ($)", fontsize = 15)
+    plt.title("Charges by Region", fontsize = 15)
+    
     #this function will produce how many % of the entire sample are smoker versus how many % of the most expensive medical cost people from 25% sample are smoker 
 def show_smoker_table(df):
     smoker = df.loc[df['smoker'] == 'yes']
