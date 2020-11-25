@@ -3,7 +3,7 @@
 
 ## Milestones
 
-Milestone 2 is completed and stored inside the .ipynb_checkpoints folder 
+Milestone 2 is completed and stored inside the analysis/.ipynb_checkpoints folder 
 
 ## Describe your topic/interest in about 150-200 words
 
