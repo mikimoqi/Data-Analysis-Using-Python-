@@ -1,10 +1,10 @@
-#There are more smoking men than smoking women. Perhaps this is a reason men have higher charges than women?
+# There are more smoking men than smoking women. Perhaps this is a reason men have higher charges than women?
 
 
 
 
 
-###This completes my basic EDA. I will now attempt to answer some research questions based on this data:
+### This completes my basic EDA. I will now attempt to answer some research questions based on this data:
 
 1. Is there a correlation between BMI and charges? Is there a correlation between BMI, sex, and their charges?
 
@@ -16,8 +16,8 @@
 
 5. What's the relationship between risk factor (compose smoker and unhealthy bmi index) and charges
 
-####To answer the question: Who pays the most for medical expenses?
+#### To answer the question: Who pays the most for medical expenses?
 
-####It appears that smoking has the highest correlation with cost, then age, then BMI.
+#### It appears that smoking has the highest correlation with cost, then age, then BMI.
 
 The group that pays the most, it would follow, is one who smokes, has high age, and has high BMI.
