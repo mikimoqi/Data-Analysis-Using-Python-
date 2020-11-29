@@ -15,6 +15,11 @@ def load_clean_df(path):
     
     return df
 
+def discard_children_region(df):
+    
+    df.drop(['children', 'region'], axis = 1, inplace = True)
+    return df
+
 def display_big_picture(df):
     
     #displays the general form of all the data
