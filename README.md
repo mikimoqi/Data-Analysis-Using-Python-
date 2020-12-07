@@ -1,9 +1,13 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=312412&assignment_repo_type=GroupAssignmentRepo)
 # Group 6015 - {Analysis on the Medical Cost per Person in United States}
 
-## Milestones
+## Project Link:
 
-Milestone 2 is completed and stored inside the analysis folder 
+https://youtu.be/aLZfYIxQAE4
+
+## Lab 10:
+
+Lab 10 is located in analyis within each group's member folder with their individual tableau package 
 
 ## Describe your topic/interest in about 150-200 words
 
