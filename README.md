@@ -19,9 +19,9 @@ Our dataset has 7 columns and more than 1338 rows of tuples. We are intested in 
 
 ## Team Members
 
-- Person 1: **Micky Yin (#48376140)**, I am majoring in Computer Science with strong interest in back-end development. *I am interested to learn game development and some machine learning.* 
+- Person 1: **Miki Yin **, I am majoring in Computer Science with strong interest in back-end development. *I am interested to learn game development and some machine learning.* 
 > nice to meet you all! 
-- Person 2: **Brandon Krieg 56913452**. Computer Science major with strong emphasis on scientific, mathematical computing. *thank you for coming to my ted talk*
+- Person 2: **Brandon Krieg **. Computer Science major with strong emphasis on scientific, mathematical computing. *thank you for coming to my ted talk*
 > fancy quote by smart person 
 
 
